@@ -32,6 +32,15 @@ namespace exe4_051
                 ele[top] = Console.ReadLine();
             }
         }
+
+        public int pop()
+        {
+            if (top == -1)
+            {
+                Console.WriteLine("Stack Underflow");
+                return -1;
+            }
+        }
         
     }
 }
