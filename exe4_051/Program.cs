@@ -47,6 +47,15 @@ namespace exe4_051
                 return top;
             }
         }
+
+        public void display()
+        {
+            if (top == -1)
+            {
+                Console.WriteLine("Stack is Empty");
+                return ;
+            }
+        }
         
     }
 }
