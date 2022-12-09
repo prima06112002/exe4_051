@@ -25,6 +25,12 @@ namespace exe4_051
                 Console.WriteLine("stack overlow");
                 return;
             }
+            else
+            {
+                top++;
+                Console.WriteLine("Masukan Element: ");
+                ele[top] = Console.ReadLine();
+            }
         }
         
     }
