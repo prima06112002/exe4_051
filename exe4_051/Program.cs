@@ -83,8 +83,20 @@ namespace exe4_051
                     case '1':
                         s.push();
                         break;
+
                     case '2':
                         s.pop();
+                        break;
+
+                    case '3':
+                        s.display();
+                        break;
+
+                    case '4':
+                        return;
+
+                    default:
+                        Console.WriteLine("\n invalid choice");
                         break;
                 }
             }
