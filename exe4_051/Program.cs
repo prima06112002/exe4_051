@@ -17,6 +17,15 @@ namespace exe4_051
             top = -1;
             max = ele.Length;
         }
+
+        public void push()
+        {
+            if (top == max - 1)
+            {
+                Console.WriteLine("stack overlow");
+                return;
+            }
+        }
         
     }
 }
