@@ -57,9 +57,9 @@ namespace exe4_051
             }
             else
             {
-                for (int i = 0; i <= top; i++)
+                for (int prim = 0; prim <= top; prim++)
                 {
-                    Console.WriteLine("Item[" + (i + 1) + "]: " + ele[i]);
+                    Console.WriteLine("Item[" + (prim + 1) + "]: " + ele[prim]);
                 }
             }
         }
