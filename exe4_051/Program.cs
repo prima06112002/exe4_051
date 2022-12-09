@@ -80,7 +80,12 @@ namespace exe4_051
                 char ch = Convert.ToChar(input == "" ? "0" : input);
                 switch (ch)
                 {
-
+                    case '1':
+                        s.push();
+                        break;
+                    case '2':
+                        s.pop();
+                        break;
                 }
             }
         }
