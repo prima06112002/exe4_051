@@ -9,55 +9,55 @@ namespace exe4_051
     class Stack
     {
         private String[] ele = new string[40];
-        private int prim;
+        private int top;
         private int max;
 
         public Stack()
         {
-            prim = -1;
+            top = -1;
             max = ele.Length;
         }
 
         public void push()
         {
-            if (prim == max - 1)
+            if (top == max - 1)
             {
                 Console.WriteLine("stack overlow");
                 return;
             }
             else
             {
-                prim++;
+                top++;
                 Console.WriteLine("Masukan Element: ");
-                ele[prim] = Console.ReadLine();
+                ele[top] = Console.ReadLine();
             }
         }
 
         public int pop()
         {
-            if (prim == -1)
+            if (top == -1)
             {
                 Console.WriteLine("Stack Underflow");
                 return -1;
             }
             else
             {
-                Console.WriteLine("Poped element is: " + ele[prim]);
-                prim--;
-                return prim;
+                Console.WriteLine("Poped element is: " + ele[top]);
+                top--;
+                return top;
             }
         }
 
         public void display()
         {
-            if (prim == -1)
+            if (top == -1)
             {
                 Console.WriteLine("Stack is Empty");
                 return ;
             }
             else
             {
-                for (int i = 0; i <= prim; i++)
+                for (int i = 0; i <= top; i++)
                 {
                     Console.WriteLine("Item[" + (i + 1) + "]: " + ele[i]);
                 }
