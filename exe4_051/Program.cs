@@ -55,6 +55,13 @@ namespace exe4_051
                 Console.WriteLine("Stack is Empty");
                 return ;
             }
+            else
+            {
+                for (int i = 0; i <= top; i++)
+                {
+                    Console.WriteLine("Item[" + (i + 1) + "]: " + ele[i]);
+                }
+            }
         }
         
     }
