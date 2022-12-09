@@ -40,6 +40,12 @@ namespace exe4_051
                 Console.WriteLine("Stack Underflow");
                 return -1;
             }
+            else
+            {
+                Console.WriteLine("Poped element is: " + ele[top]);
+                top--;
+                return top;
+            }
         }
         
     }
